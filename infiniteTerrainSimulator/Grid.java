@@ -31,7 +31,6 @@ public class Grid {
 
 		grid = new boolean[gridSize][gridSize];
 
-
 		xPositionOfPOI = rand.nextInt(gridSize-1);;
 		yPositionOfPOI = rand.nextInt(gridSize-1);;
 
@@ -70,17 +69,18 @@ public class Grid {
 
 		if(move.equalsIgnoreCase("North")||move.equalsIgnoreCase("n")) {
 
-			System.out.println(xPositionOfPOI + " " + yPositionOfPOI);
+			//System.out.println(xPositionOfPOI + " " + yPositionOfPOI);
 
 			grid[xPositionOfPOI][yPositionOfPOI] = false;
 			if(yPositionOfPOI != 0) {
 				
 				yPositionOfPOI =- 1;	
+				
 			}
 
 			grid[xPositionOfPOI][yPositionOfPOI] = true;
 
-			System.out.println(xPositionOfPOI + " " + yPositionOfPOI);
+			//System.out.println(xPositionOfPOI + " " + yPositionOfPOI);
 
 		}
 		else if(move.equalsIgnoreCase("South")||move.equalsIgnoreCase("s")) {

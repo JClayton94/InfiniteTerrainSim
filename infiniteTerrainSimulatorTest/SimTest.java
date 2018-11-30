@@ -46,7 +46,6 @@ public class SimTest {
 		
 		assertEquals("Not correct distance", 1, grid.distanceFromNearestPOI(), 0.1); 
 		
-		
 	}
 
 }
